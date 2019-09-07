@@ -1,0 +1,41 @@
+<html> 
+    <head>
+      <title>ILS</title>
+      <link rel = "styleshet" type = "text/css" href = "login.css"/>
+      
+    </head>
+
+    <body>
+        
+        <a href="numeros.php">Consulte los numeros utilizados aqui.</a>
+        <a href="cambiar_datos.php">Si quiere editar algun dato ingresado,consulte a un organizador.</a>
+
+    <form action= "inscripcion_accion.php" method="post" enctype="multipart/form-data">
+       
+        <h2>Registro para el campeonato Gobag Abarth Punto Competizione</h2>
+            <label for="nombre">Nombre</label>
+            <input type="text" placeholder="Nombre" name="nombre" required>
+           
+            <label for="apellido">Apellido</label>
+            <input type="text" placeholder="Apellido" name="apellido" required>
+           
+            <label for="numero">Numero Preferido (no se pueden repetir, consulte los numeros usados más arriba.</label>
+            <input type="number" placeholder="Numero" name="numero" required>
+
+            <label for="guid">Guid</label>
+            <input type="text" placeholder="Guid" name="guid" required>
+
+            <label for="discord">Discord (Formato: Nombre#1234)</label>
+            <input type="text" placeholder="Discord" name="discord" required>
+
+            <label for="twitter">Twitter (opcional)</label>
+            <input type="text" placeholder="Twitter" name="twitter" >
+
+            <label for="instagram">Instagram (opcional)</label>
+            <input type="text" placeholder="Instagram" name="instagram" >
+        
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="submit" value="Completar Registro" name="submit"></button>
+        </form> 
+
+   </body>
